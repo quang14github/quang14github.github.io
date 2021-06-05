@@ -1,0 +1,97 @@
+* {
+   box-sizing: border-box;
+}
+ body {
+     background-color: #c0c86d;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column;
+     padding: 0;
+     margin: 0;
+     height: 100vh;
+ }
+ .info-container {
+     font-size: 100px;
+     text-align: center;
+ }
+ .bg {
+     cursor: url(./cursor.png), default;
+     background-image: url(./background.png);
+     background-repeat: no-repeat;
+     width: 1920px;
+     height: 1080px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .hole {
+     background-color: black;
+     border-radius: 50%;
+     overflow: visible;
+     width: 267px;
+     height: 267px;
+ }
+ .hole-container {
+     width: 25%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .mole {
+     position: relative;
+     right: 30px;
+ }
+
+ .hungry {
+     cursor: url(./cursor-worm.png), default;
+ }
+ .worm {
+     width: 1660px;
+ }
+
+ .worm-container {
+     overflow: hidden;
+     transition: width 0.5s ease-in-out;
+ }
+
+ .worm-box {
+     width: 1660px;
+ }
+
+ .win {
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+ }
+ .win button {
+     position: relative;
+     right: 202px;
+     bottom: 60px;
+     width: 200px;
+     height: 200px;
+     background-color: transparent;
+     font-size: 60px;
+     border-radius: 50%;
+     color: white;
+ }
+ .win img {
+    width: 900px;
+    height: 900px;
+ }
+ .lose {
+     display: flex;
+     flex-flow: column;
+     justify-content: center;
+     align-items: center;
+     font-size: 50px;
+ }
+ .lose img {
+     height: 700px;
+     width: 1000px;
+ }
+ .gone , .hide{
+    display: none;
+}
