@@ -11,7 +11,7 @@ function getGoneInterval() {
     return Date.now() + Math.floor(Math.random() * 18000) + 2000;
 }
 function getHungryInterval() {
-    return Date.now() + Math.floor(Math.random() * randomTime) + 1000;
+    return Date.now() + Math.floor(Math.random() * randomTime) + 700;
 }
 function timer() {
     document.querySelector('.timer-container').innerHTML = `${roundTime}`;   
@@ -161,7 +161,6 @@ function win() {
         document.querySelector('.win').children[0].src = './you-win.jpg';
         document.querySelector('.nextlevel').classList.add("hide");
         document.querySelector('.level-container').classList.add("hide");
-
     }
     document.querySelector('.win').classList.remove("hide");
     clearInterval(timeCount);
