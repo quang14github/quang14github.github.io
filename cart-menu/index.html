@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off-Canvas Cart Menu</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu-btn">
+        <span class="menu-btn-number"><span id="numberOrder">2</span></span>
+        <button class="menu-btn-icon" type="button"><img src="./image/menu-btn.png" alt=""></button>
+    </div>
+    <section class="cart-menu">
+        <header>
+            <span>Your shopping cart</span>
+            <button class="close-btn" type="button">X</button>
+        </header>
+        <main>
+            <section class="orders-ctn">
+                <div class="order-ctn">
+                    <img src="./image/drone1.jpg" alt="drone helicopter">
+                    <div class="order">
+                        <div class="order-item">
+                            <span class="order-item-name">Mini Drone Helicopter Induction</span>
+                            <span class="order-item-attribute"><b>Color</b>: BLUE</span>
+                        </div>
+                        <div class="order-remove">
+                            <button class="order-remove-btn" type="button">Remove</button>
+                        </div>
+                        <div class="order-add">
+                            <button class="minus-btn">&minus;</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="order-cost">
+                            <span class="order-cost-prev">$50.78</span>
+                            <span class="order-cost-now">$29.89</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-ctn" style="border: none;">
+                    <img src="./image/drone2.jpg" alt="drone helicopter set 3">
+                    <div class="order">
+                        <div class="order-item">
+                            <span class="order-item-name">Mini Drone Helicopter Induction</span>
+                            <span class="order-item-attribute"><b>Color</b></bColor>: SET 3 (BLUE+RED+GOLD): 25%
+                                OFF</span>
+                        </div>
+                        <div class="order-remove">
+                            <button class="order-remove-btn" type="button">Remove</button>
+                        </div>
+                        <div class="order-add">
+                            <button class="minus-btn">&minus;</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="order-cost">
+                            <span class="order-cost-prev">$134.5</span>
+                            <span class="order-cost-now">$67.25</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="checkout">
+                <div class="checkout-info">
+                    <span>Subtotal</span>
+                    <span class="checkout-info-money">
+                        $97.14
+                    </span>
+                </div>
+                <button class="proceed" type="button">PROCEED TO SECURED CHECKOUT</button>
+                <fieldset>
+                    <legend>or quick checkout with</legend>
+                </fieldset>
+                <button class="paypal" type="button"><img class="paypal-logo" src="./image/paypal-logo.png"
+                        alt="paypal logo"></button>
+            </section>
+        </main>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
