@@ -14,7 +14,6 @@ body {
 }
 
 body .menu-btn {
-  overflow-x: hidden;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -59,7 +58,8 @@ body .cart-menu {
   right: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  width: 30%;
+  width: 100vw;
+  max-width: 528px;
   overflow-x: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
